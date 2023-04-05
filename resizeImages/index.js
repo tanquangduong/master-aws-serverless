@@ -9,7 +9,7 @@ const resizeAsync = promisify(im.resize);
 const readFileAsync = promisify(fs.readFile);
 const unlinkAsync = promisify(fs.unlink);
 
-AWS.config.update({ region: 'us-west-2' });
+AWS.config.update({ region: 'us-west-1' });
 const s3 = new AWS.S3();
 
 // console.log("Hello Serverless")
